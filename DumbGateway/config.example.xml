@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Port>8080</Port>
+  <Host>127.0.0.1</Host>
+  <Endpoints>
+    <Endpoint>
+      <Path>/blank</Path>
+      <FileName>cmd.exe</FileName>
+      <Arguments>/c dir</Arguments>
+      <StartDirectory></StartDirectory>
+      <Response>Blank</Response>
+      <ResponseContentType>text/plain</ResponseContentType>
+    </Endpoint>
+    <Endpoint>
+      <Path>/static</Path>
+      <FileName>cmd.exe</FileName>
+      <Arguments>/c dir</Arguments>
+      <StartDirectory></StartDirectory>
+      <Response>StaticFile</Response>
+      <ResponseFileName>.\config.example.xml</ResponseFileName>
+      <ResponseContentType>application/xml</ResponseContentType>
+    </Endpoint>
+    <Endpoint>
+      <Path>/stdout</Path>
+      <FileName>cmd.exe</FileName>
+      <Arguments>/c dir</Arguments>
+      <StartDirectory></StartDirectory>
+      <Response>StandardOutput</Response>
+      <ResponseContentType>text/plain</ResponseContentType>
+  </Endpoint>
+  </Endpoints>
+</Configuration>
